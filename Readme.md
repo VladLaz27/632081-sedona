@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vladyslav Lazebnyk](https://up.htmlacademy.ru/htmlcss/21/user/632081).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев] (https://htmlacademy.ru/profile/id252055) .
 
 ---
 
