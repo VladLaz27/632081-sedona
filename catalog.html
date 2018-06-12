@@ -23,7 +23,51 @@
 	  	<!--Каталог-->
 	  	<main class="content">
 	  		<section class="filters">
-	  			<!--Форма-->
+	  				<b>Инфраструктура:</b>
+	  				<ul>
+	  					<li>
+	  						<input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
+    						<label for="pool">Бассейн</label>
+	  					</li>
+	  					<li>
+	  						<input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
+	  						<label for="parking">Парковка</label>
+	  					</li>
+	  					<li>
+	  						<input class="filter-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+	  						<label for="wi-fi">wi-fi</label>
+	  					</li>
+	  				</ul>
+	  				<b>Тип жилья:</b>
+	  				<ul>
+	  					<li>
+	  						<input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+    						<label for="hotel">Гостиница</label>
+	  					</li>
+	  					<li>
+	  						<input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
+	  						<label for="motel">Мотель</label>
+	  					</li>
+	  					<li>
+	  						<input class="filter-checkbox visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
+	  						<label for="apartment">Апартаменты</label>
+	  					</li>
+	  				</ul>
+	  				<div class="filter">
+						<div class="filter-range-wrapper">
+						    <div class="filter-range">
+						    	<div class="filter-range-scale">
+						        	<div class="filter-range-bar"></div>
+						    	</div>
+						    <button class="filter-range-handle min"></button>
+						    <button class="filter-range-handle max" style="left: 75%;"></button>
+						    </div>
+						</div>
+						<div class="filter-interval">
+						    <label>От <input type="text" name="min-interval" value="0"></label>
+						    <label>До <input type="text" name="max-interval" value="15000"></label>
+						</div>
+					</div>
 	  		</section>
 	  		<div class="results">
 	  			<p>Найдено:<span class="count">3</span></p>

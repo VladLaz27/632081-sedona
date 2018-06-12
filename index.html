@@ -89,7 +89,30 @@
 	  			<p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	  			<div class="modal search-hotel">
 	  				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
-	  				<!--Форма-->
+	  				<form method="post" action="">
+	  					<p>
+	  						<label for="date-in">Дата заезда:</label>
+	  						<input type="text" name="calendar" id="date-in" placeholder="24 апреля 2017">
+	  						<button class="calendar-button" type="batton"></button>
+	  					</p>
+	  					<p>
+	  						<label for="date-out">Дата выезда:</label>
+	  						<input type="text" name="calendar" id="date-out" placeholder="4 июля 2017">
+	  						<button class="calendar-button" type="batton"></button>
+	  					</p>
+	  					<div>
+	  						<label for="quantity-adults">Взрослые</label>
+	  						<button class="button-minus" type="button"></button>
+	  						<input type="text" name="quantity" id="quantity-adults" placeholder="2">
+	  						<button class="button-plus" type="button"></button>
+	  					</div>
+	  						<div>
+	  						<label for="quantity-children">Дети</label>
+	  						<button class="button-minus" type="button"></button>
+	  						<input type="text" name="quantity" id="quantity-children" placeholder="0">
+	  						<button class="button-plus" type="button"></button>
+	  					</div>
+	  				</form>
 	  			</div>
 	  		</section>
 	  		<section class="map">
