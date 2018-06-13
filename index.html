@@ -89,13 +89,37 @@
 	  			<p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 	  			<div class="modal search-hotel">
 	  				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
-	  				<!--Форма-->
+	  				<form method="post" action="https://echo.htmlacademy.ru">
+	  					<p>
+	  						<label for="date-in">Дата заезда:</label>
+	  						<input type="text" name="calendar" id="date-in" placeholder="24 апреля 2017">
+	  						<button class="calendar-button" type="button"></button>
+	  					</p>
+	  					<p>
+	  						<label for="date-out">Дата выезда:</label>
+	  						<input type="text" name="calendar" id="date-out" placeholder="4 июля 2017">
+	  						<button class="calendar-button" type="button"></button>
+	  					</p>
+	  					<div>
+	  						<label for="quantity-adults">Взрослые</label>
+	  						<button class="button-minus" type="button"></button>
+	  						<input type="text" name="quantity" id="quantity-adults" placeholder="2">
+	  						<button class="button-plus" type="button"></button>
+	  					</div>
+	  						<div>
+	  						<label for="quantity-children">Дети</label>
+	  						<button class="button-minus" type="button"></button>
+	  						<input type="text" name="quantity" id="quantity-children" placeholder="0">
+	  						<button class="button-plus" type="button"></button>
+	  					</div>
+	  					<button class="button-hotels" type="button" value="Найти">Найти</button>
+	  				</form>
 	  			</div>
 	  		</section>
 	  		<section class="map">
 	  			<div class="map main-page">
 	  				<img class="image-map" src="img/map.png" width="1200" height="447" alt="Карта">
-	  				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505982906!2d-111.83015803238298!3d34.85437338102221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1528022262589" width="1200" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
+	  				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.180505982906!2d-111.83015803238298!3d34.85437338102221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNg!5e0!3m2!1sru!2s!4v1528022262589" width="1200" height="447" style="border:0" allowfullscreen></iframe>
 	  			</div>
 	  		</section>
 	  	</main>
@@ -106,13 +130,13 @@
 	  		</div>		
 	  		<div class="social">
 	  			<ul>
-		  			<li><a href="#"><span>Твиттер</span></a></li>
-		  			<li><a href="#"><span>Фейсбук</span></a></li>
-		  			<li><a href="#"><span>Ютуб</span></a></li>
+		  			<li class="social-icon twitter"><a href="#"><span>Твиттер</span></a></li>
+		  			<li class="social-icon facebook"><a href="#"><span>Фейсбук</span></a></li>
+		  			<li class="social-icon utube"><a href="#"><span>Ютуб</span></a></li>
 		  		</ul>	
 	  		</div>
 	  		<div class="developer">
-	  			<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="196" height="41"></a>
+	  			<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="196" height="41" alt="Логотип"></a>
 	  		</div>
 	  	</footer>	
 	  </div>	
