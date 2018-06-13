@@ -23,7 +23,7 @@
 	  	<!--Каталог-->
 	  	<main class="content">
 	  		<section class="filters">
-	  			<form method="post" action="">
+	  			<form method="post" action="https://echo.htmlacademy.ru">
 		  			<b>Инфраструктура:</b>
 		  			<ul>
 		  				<li>
@@ -54,6 +54,7 @@
 		  					<label for="apartment">Апартаменты</label>
 		  				</li>
 		  			</ul>
+		  			<b>Стоимость усдуг в сутки(р):</b>
 		  			<div class="filter">
 						<div class="filter-range-wrapper">
 							<div class="filter-range">
@@ -69,20 +70,23 @@
 							   <label>До <input type="text" name="max-interval" value="15000"></label>
 						</div>
 					</div>
+					<button class="button-show" type="button" value="Показать">Показать</button>
 				</form>		
 	  		</section>
 	  		<div class="results">
-	  			<p>Найдено:<span class="count">3</span></p>
-	  			<p>Сортировка</p>
-	  			<ul class="sorting-list">
-	  				<li><a href="#">По цене</a></li>
-	  				<li><a href="#">По типу</a></li>
-	  				<li><a href="#">По рейтингу</a></li>
-	  			</ul>
-	  			<ul class="search-navigation">
-	  				<li><a href="#">Стрелка вверх</a></li>
-	  				<li><a href="#"></a>Стрелка вниз</li>
-	  			</ul>
+	  			<div class="search-header">
+		  			<p>Найдено:<span class="count">3</span></p>
+		  			<p>Сортировка</p>
+		  			<ul class="sorting-list">
+		  				<li><a href="#">По цене</a></li>
+		  				<li><a href="#">По типу</a></li>
+		  				<li><a href="#">По рейтингу</a></li>
+		  			</ul>
+		  			<ul class="search-navigation">
+		  				<li><a class="up" href="#">Стрелка вверх</a></li>
+		  				<li><a class="down" href="#"></a>Стрелка вниз</li>
+		  			</ul>
+		  		</div>	
 	  			<ul class="catalog">
 	  				<li class="catalog-item">
 	  					<div class="catalog-item-image">
@@ -169,9 +173,9 @@
 	  		</div>		
 	  		<div class="social">
 	  			<ul>
-		  			<li><a href="#"><span>Твиттер</span></a></li>
-		  			<li><a href="#"><span>Фейсбук</span></a></li>
-		  			<li><a href="#"><span>Ютуб</span></a></li>
+		  			<li class="social-icon twitter"><a href="#"><span>Твиттер</span></a></li>
+		  			<li class="social-icon facebook"><a href="#"><span>Фейсбук</span></a></li>
+		  			<li class="social-icon utube"><a href="#"><span>Ютуб</span></a></li>
 		  		</ul>	
 	  		</div>
 	  		<div class="developer">
