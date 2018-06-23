@@ -1,8 +1,3 @@
-* {
-	margin: 0;
-	padding: 0;
-}	
-
 body {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -31,13 +26,12 @@ input {
 	font-weight: bold; 
 	
 	background-color: white;
+
+	position: relative;
 }
 
-.site-navigation,
-.service-list
-.feature-item
-.social ul {
-	list-style: none;
+.service-list {
+	clear: both;
 }
 
 .main-navigation a {
@@ -52,25 +46,40 @@ input {
 	color: #cacaca;
 }
 
+.site-navigation {
+	min-height: 56px;
+
+	display: flex;
+	justify-content: space-around;
+}
+
 .banner-bg {
 	background: url("../img/bg.jpg");
 	background-repeat: no-repeat;
-	
+	background-position: 50% -84px;
+	min-height: 432px;
+	padding-top: 76px;
 	width: 1200px;
-	height: 564px;
+	margin-bottom: 60px;
 }
 
 .banner-bg img {
 	display: block;
 	text-align: center;
+	margin: 0 auto;
+	width: 457px;
+	height: 352px;
+}
+
+.explain {
+
+	margin-bottom: 55px;
 }
 
 .explain p:first-child {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
-
-	margin-top: 61px;
 }
 
 .explain p:last-child {
@@ -80,34 +89,55 @@ input {
 	color: #333333;
 }
 
-
+.feature1 {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 60px;
+}
 
 .description-panorama {
 	background-color: #81b3d2;
 	height: 256px;
 	width: 400px;
-	float: left;
 	text-align: center; 
 	color: white;
+	margin: 0 auto;
 }
 
 .panorama {
 	width: 800px;
 	height: 256px;
-	float: right;
 }
 
 .services-list {
-	
-	text-align: center;
+	display: flex;
+	justify-content: space-around;
+
 	list-style: none;
+
+}
+
+.services-list b {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.service-item {
+	width: 300px;
+	text-align: center;
+	margin-bottom: 88px;
+}
+
+.feature2 {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
 }
 
 .description-bridge {
 	background-color: #81b3d2;
 	height: 256px;
 	width: 400px;
-	float: right;
 	text-align: center; 
 	color: white;
 }
@@ -115,11 +145,27 @@ input {
 .bridge {
 	width: 800px;
 	height: 256px;
-	float: left;
 }
 
 .all-feature {
 	background-color: #eee;
+}
+
+.feature-list {
+	display: flex;
+	justify-content: space-around;
+
+	list-style: none;
+
+	min-height: 255px;
+	margin: 0 auto;
+}
+
+.feature-item {
+	padding-top: 45px;
+	padding-bottom: 65px;
+	width: 300px;
+	text-align: center;
 }
 
 .button-search {
@@ -187,23 +233,63 @@ input {
 	color: #766357;
 }
 
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.social ul {
+	list-style: none;
+	width: 160px;
+
+	display: flex;
+	justify-content: space-around;
+}
+	
 .filters {
 	background-image: url("../img/bg-catalog.jpg");
 	background-repeat: no-repeat;
 	
 }
 
+.filters-flex {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.filters-flex ul {
+	list-style: none;
+}
+
+.search-header {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
 .search-header p:first-child {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
+	width: 120px;
+	margin-left: 70px;
 }
 
 .search-header p:last-child {
 	font-size: 12px;
 	line-height: 18px;
+	width: 85px;
 }
 
+.sorting-list {
+	width: 250px;
+
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
 
 .sorting-list a {
 	color: #cacaca;
@@ -215,6 +301,28 @@ input {
 
 .sorting-list a:focus {
 
+}
+
+.search-navigation {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-item {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.button-flex {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.rating {
+	flex-direction: column;
+	align-items: flex-end;
 }
 
 .catalog-item h2>a {
@@ -268,3 +376,28 @@ input {
 	background-color: #5496bd;
 	color: #7e746e;
 }
+
+.twitter {
+	width: 48px;
+	height: 46px;
+	background-color: #81b3d2; 
+	background-image: url("../img/twitter.svg");
+	background-repeat: no-repeat;
+}
+
+.facebook {
+	width: 48px;
+	height: 46px;
+	background-color: #81b3d2; 
+	background-image: url("../img/fb-icon.svg");
+	background-repeat: no-repeat;
+}
+
+.utube {
+	width: 48px;
+	height: 46px;
+	background-color: #81b3d2; 
+	background-image: url("../img/youtube.svg");
+	background-repeat: no-repeat;
+}
+
