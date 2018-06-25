@@ -15,7 +15,7 @@ a {
 	text-decoration: none;
 }
 
-input {
+.modal form input {
 	background-color: #f2f2f2;
 }
 
@@ -92,7 +92,6 @@ input {
 .feature1 {
 	display: flex;
 	justify-content: flex-start;
-	margin-bottom: 60px;
 }
 
 .description-panorama {
@@ -111,9 +110,11 @@ input {
 
 .services-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
-
+	padding: 0;
 	list-style: none;
+	margin: 0;
 
 }
 
@@ -125,7 +126,10 @@ input {
 .service-item {
 	width: 300px;
 	text-align: center;
-	margin-bottom: 88px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 161px 30px 68px;
+	
 }
 
 .feature2 {
@@ -153,18 +157,18 @@ input {
 
 .feature-list {
 	display: flex;
-	justify-content: space-around;
 
 	list-style: none;
 
 	min-height: 255px;
-	margin: 0 auto;
+	margin: 0;
+	padding-left: 0;
 }
 
 .feature-item {
 	padding-top: 45px;
 	padding-bottom: 65px;
-	width: 300px;
+	width: 400px;
 	text-align: center;
 }
 
@@ -233,35 +237,52 @@ input {
 	color: #766357;
 }
 
-.container {
+.main-footer {
 	display: flex;
-	justify-content: space-around;
+
 }
 
+.page-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+}
 
-.social ul {
+.page-footer ul {
+	display: flex;
+	justify-content: space-around;
 	list-style: none;
-	width: 160px;
-
-	display: flex;
-	justify-content: space-around;
 }
-	
+
 .filters {
 	background-image: url("../img/bg-catalog.jpg");
 	background-repeat: no-repeat;
 	
 }
 
-.filters-flex {
-	list-style: none;
+.form-filters {
 	display: flex;
-	justify-content: space-around;
+	padding: 27px 60px 6px;
+	color: #fff;
 }
 
 .filters-flex ul {
 	list-style: none;
 }
+
+
+
+.left {
+	width: 576px;
+	display: flex;
+}
+
+.right {
+	display: flex;
+	width: 400px;
+}
+
 
 .search-header {
 	list-style: none;
@@ -312,7 +333,6 @@ input {
 .catalog-item {
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
 }
 
 .button-flex {
@@ -325,7 +345,7 @@ input {
 	align-items: flex-end;
 }
 
-.catalog-item h2>a {
+.catalog-item_booking h2>a {
 	font-size: 21px;
 	line-height: 26px;
 	color: black;
@@ -337,6 +357,11 @@ input {
 
 .catalog-item h2>a:active {
 	color: #cacaca;
+}
+
+.catalog-image {
+	width:135px;
+	height: 90px;
 }
 
 .button--blue {

@@ -26,8 +26,8 @@
 	  	<!--Каталог-->
 	  	<main class="content">
 	  		<section class="filters">
-	  			<form method="post" action="https://echo.htmlacademy.ru">
-	  				<div class="filters-flex">
+	  			<form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
+	  				<div class="form-columns left">
 			  			<b>Инфраструктура:</b>
 			  			<ul>
 			  				<li>
@@ -58,6 +58,8 @@
 			  					<label for="apartment">Апартаменты</label>
 			  				</li>
 			  			</ul>
+			  		</div> 
+			  		<div class="form-columns right">
 			  			<b>Стоимость усдуг в сутки(р):</b>
 			  			<div class="filter">
 							<div class="filter-range-wrapper">
@@ -75,7 +77,7 @@
 							</div>
 						</div>
 						<button class="button-show" type="submit" value="Показать">Показать</button>
-					</div>	
+					</div>
 				</form>		
 	  		</section>
 	  		<div class="results">
@@ -97,19 +99,21 @@
 	  					<div class="catalog-image">
 	  						<img src="img/product-1.jpg" width="135" height="90" alt="Гостиница">
 	  					</div>
-	  					<h2>
-	  					<a href="catalog-item.html">Amara resort & spa</a>
-	  					</h2>
-	  					<div class="button-flex">
-		  					<div class="hotel-info">
-		  						<p class="hotel-text">Гостиница</p>
-		  						<a href="#" class="hotel_button button button--blue">Подробние</a>
-		  					</div>
-		  					<div class="hotels-booking">
-		  						<p class="hotel-text">От 4000Р</p>
-		  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
-		  					</div>
-		  				</div>		
+	  					<div class="catalog-item_booking">
+		  					<h2>
+		  					<a href="catalog-item.html">Amara resort & spa</a>
+		  					</h2>
+		  					<div class="button-flex">
+			  					<div class="hotel-info">
+			  						<p class="hotel-text">Гостиница</p>
+			  						<a href="#" class="hotel_button button button--blue">Подробние</a>
+			  					</div>
+			  					<div class="hotels-booking">
+			  						<p class="hotel-text">От 4000Р</p>
+			  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
+			  					</div>
+			  				</div>	
+			  			</div>		
 	  					<div class="rating">
 	  						<div class="rating-star">
 	  							<span>Звездочка</span>
@@ -125,18 +129,20 @@
 	  					<div class="catalog-image">
 	  						<img src="img/product-2.jpg" width="135" height="90" alt="Мотель">
 	  					</div>
-	  					<h2>
-	  					<a href="catalog-item.html">Desert quail inn</a>
-	  					</h2>
-	  					<div class="button-flex">
-		  					<div class="hotel-info">
-		  						<p class="hotel-text">Мотель</p>
-		  						<a href="#" class="hotel_button button button--blue">Подробние</a>
-		  					</div>
-		  					<div class="hotels-booking">
-		  						<p class="hotel-text">От 3000Р</p>
-		  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
-		  					</div>
+	  					<div class="catalog-item_booking">
+		  					<h2>
+		  					<a href="catalog-item.html">Desert quail inn</a>
+		  					</h2>
+		  					<div class="button-flex">
+			  					<div class="hotel-info">
+			  						<p class="hotel-text">Мотель</p>
+			  						<a href="#" class="hotel_button button button--blue">Подробние</a>
+			  					</div>
+			  					<div class="hotels-booking">
+			  						<p class="hotel-text">От 3000Р</p>
+			  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
+			  					</div>
+			  				</div>		
 		  				</div>	
 	  					<div class="rating">
 	  						<div class="rating-star">
@@ -152,19 +158,21 @@
 	  					<div class="catalog-image">
 	  						<img src="img/product-3.jpg" width="135" height="90" alt="Апартаменты">
 	  					</div>
-	  					<h2>
-	  					<a href="catalog-item.html">Villas at poco diablo</a>
-	  					</h2>
-	  					<div class="button-flex">
-		  					<div class="hotel-info">
-		  						<p class="hotel-text">Апартаменты</p>
-		  						<a href="#" class="hotel_button button button--blue">Подробние</a>
-		  					</div>
-		  					<div class="hotels-booking">
-		  						<p class="hotel-text">От 2000Р</p>
-		  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
-		  					</div>
-		  				</div>	
+	  					<div class="catalog-item_booking">
+		  					<h2>
+		  					<a href="catalog-item.html">Villas at poco diablo</a>
+		  					</h2>
+		  					<div class="button-flex">
+			  					<div class="hotel-info">
+			  						<p class="hotel-text">Апартаменты</p>
+			  						<a href="#" class="hotel_button button button--blue">Подробние</a>
+			  					</div>
+			  					<div class="hotels-booking">
+			  						<p class="hotel-text">От 2000Р</p>
+			  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
+			  					</div>
+			  				</div>
+			  			</div>		
 	  					<div class="rating">
 	  						<div class="rating-star">
 	  							<span>Звездочка</span>
