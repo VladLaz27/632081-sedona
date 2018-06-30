@@ -16,84 +16,87 @@
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="photo.html">Фото и Видео</a></li>
 					<li><a href="map.html">Карта штата</a></li>
-					<li class="site-navigation-curent"><a>Гостиницы</a></li>
+					<li><a href="catalog.html">Гостиницы</a></li>
 				</ul>
-				<a class="main-header-logo" href="index.html">
+				<a class="header-logo">
 					<img src="img/logo.png" width="137" height="70" alt="Логотип Седона">
-				</a>	
+				</a>
 			</nav>  			
 	  	</header>
 	  	<!--Каталог-->
 	  	<main class="content">
 	  		<section class="filters">
-	  			<form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
-	  				<div class="form-columns left">
-			  			<b>Инфраструктура:</b>
-			  			<ul>
-			  				<li>
-			  					<input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
-		    					<label for="pool">Бассейн</label>
-			  				</li>
-			  				<li>
-			  					<input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
-			  					<label for="parking">Парковка</label>
-			  				</li>
-			  				<li>
-			  					<input class="filter-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-			  					<label for="wi-fi">wi-fi</label>
-			  				</li>
-			  			</ul>
-			  			<b>Тип жилья:</b>
-			  			<ul>
-			  				<li>
-			  					<input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
-		    					<label for="hotel">Гостиница</label>
-			  				</li>
-			  				<li>
-			  					<input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
-			  					<label for="motel">Мотель</label>
-			  				</li>
-			  				<li>
-			  					<input class="filter-checkbox visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
-			  					<label for="apartment">Апартаменты</label>
-			  				</li>
-			  			</ul>
-			  		</div> 
-			  		<div class="form-columns right">
-			  			<b>Стоимость усдуг в сутки(р):</b>
-			  			<div class="filter">
+		  		<form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
+		  			<div class="form-columns left">
+				  		<b>Инфраструктура:</b>
+				  		<ul class="filter-checkboxes">
+				  			<li>
+				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
+			    				<label for="pool">Бассейн</label>
+				  			</li>
+				  			<li>
+				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
+				  				<label for="parking">Парковка</label>
+				  			</li>
+				  			<li>
+				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+				  				<label for="wi-fi">wi-fi</label>
+				  			</li>
+				  		</ul>
+				  		<b>Тип жилья:</b>
+				  		<ul>
+				  			<li>
+				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+			    				<label for="hotel">Гостиница</label>
+				  			</li>
+				  			<li>
+				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
+				  				<label for="motel">Мотель</label>
+				  			</li>
+				  			<li>
+				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
+				  				<label for="apartment">Апартаменты</label>
+				  			</li>
+				  		</ul>
+				  	</div> 
+				  	<div class="form-columns right">
+				  		<b>Стоимость усдуг в сутки(р):</b>
+				  		<div class="filter">
 							<div class="filter-range-wrapper">
 								<div class="filter-range">
-								    <div class="filter-range-scale">
-								        <div class="filter-range-bar"></div>
-								    </div>
-								   <button class="filter-range-handle min"></button>
-								   <button class="filter-range-handle max" style="left: 75%;"></button>
+									<div class="filter-range-scale">
+									    <div class="filter-range-bar"></div>
+									</div>
+									  <button class="filter-range-handle min"></button>
+									  <button class="filter-range-handle max" style="left: 75%;"></button>
 								</div>
 							</div>
-							<div class="filter-interval">
-								   <label>От <input type="text" name="min-interval" value="0"></label>
-								   <label>До <input type="text" name="max-interval" value="15000"></label>
+								<div class="filter-interval">
+									<label>От <input type="text" name="min-interval" value="0"></label>
+									<label>До <input type="text" name="max-interval" value="15000"></label>
+								</div>
 							</div>
+							<button class="button-show" type="submit" value="Показать">Показать</button>
 						</div>
-						<button class="button-show" type="submit" value="Показать">Показать</button>
-					</div>
-				</form>		
+					</form>			
 	  		</section>
-	  		<div class="results">
-	  			<div class="search-header">
-		  			<p>Найдено:<span class="count">3</span></p>
-		  			<p>Сортировка</p>
-		  			<ul class="sorting-list">
-		  				<li><a href="#">По цене</a></li>
-		  				<li><a href="#">По типу</a></li>
-		  				<li><a href="#">По рейтингу</a></li>
-		  			</ul>
-		  			<ul class="search-navigation">
-		  				<li><a class="up" href="#">Стрелка вверх</a></li>
-		  				<li><a class="down" href="#"></a>Стрелка вниз</li>
-		  			</ul>
-		  		</div>	
+	  		<div class="search-header">
+	  			<div class="results">	
+			  		<p>Найдено: <span class="count">3</span></p>
+			  	</div>	
+			  	<div class="sorting">
+			  		<p>Сортировка:</p>
+			  		<ul class="sorting-list">
+			  			<li><a href="#">По цене</a></li>
+			  			<li><a href="#">По типу</a></li>
+			  			<li><a href="#">По рейтингу</a></li>
+			  		</ul>
+			  	</div>	
+		  		<ul class="search-navigation">
+		  			<li><a class="up" href="#">Стрелка вверх</a></li>
+		  			<li><a class="down" href="#">Стрелка вниз</a></li>
+		  		</ul>
+		  	</div>		
 	  			<ul class="catalog">
 	  				<li class="catalog-item">
 	  					<div class="catalog-image">
@@ -187,19 +190,21 @@
 	  	</main>
 	  		  	<!--Подвал-->
 	  	<footer class="main-footer">
-	  		<div class="hashtag">
-	  			<p>#visitsedona</p>
-	  		</div>		
-	  		<div class="social">
-	  			<ul>
-		  			<li class="social-icon twitter"><a href="#"></a></li>
-		  			<li class="social-icon facebook"><a href="#"></a></li>
-		  			<li class="social-icon utube"><a href="#"></a></li>
-		  		</ul>	
-	  		</div>
-	  		<div class="developer">
-	  			<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="196" height="41" alt="Логотип"></a>
-	  		</div>
-	  	</footer>
-	  </div>
-	</body> 	
+		  	<div class="page-footer">
+		  		<b>#visitsedona</b>
+		  	</div>		
+		  	<div class="page-footer">
+		  		<ul class="social">
+			  		<li class="twitter"><a href="#" name="twitter"></a></li>
+			  		<li class="facebook"><a href="#" name="facebook"></a></li>
+			  		<li class="utube"><a href="#" name="youtube"></a></li>
+			  	</ul>	
+		  	</div>
+		  	<div class="page-footer">
+		  		<span>Website by</span>
+		  		<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип"></a>
+		  	</div>
+	  	</footer>	
+	  </div>	
+  </body>
+</html>	
