@@ -53,7 +53,7 @@
 		  				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 		  			</li>
 		  			<li class="service-item">
-		  				<b clas="suvenir">Сувениры</b>
+		  				<b class="suvenir">Сувениры</b>
 		  				<p>Не только китайского, но и местного производства!</p>
 		  			</li>
 		  		</ul>
@@ -90,14 +90,16 @@
 	  		<section class="search-hotels">
 	  			<b>Заинтерисовались?</b>
 	  			<p>Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-	  			<div class="modal search-hotel">
-	  				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
-	  				<form method="post" action="https://echo.htmlacademy.ru">
-	  					<p>
+	  			<div class="search-hotel">
+	  				<button type="button" class="button-search button--sh">Поиск гостиницы в Седоне</button>
+	  				<form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+	  					<div class="search-form-row">
 	  						<label for="date-in">Дата заезда:</label>
-	  						<input class="input-text" type="text" name="calendar" id="date-in" placeholder="24 апреля 2017">
-	  						<button class="calendar-button" type="button"></button>
-	  					</p>
+	  						<div class="wrapper-date">
+	  							<input class="input-text" type="text" name="calendar" id="date-in" placeholder="24 апреля 2017">
+	  							<button class="calendar-button" type="button"></button>
+	  						</div>	
+	  					</div>
 	  					<p>
 	  						<label for="date-out">Дата выезда:</label>
 	  						<input class="input-text" type="text" name="calendar" id="date-out" placeholder="4 июля 2017">
@@ -141,7 +143,7 @@
 		  	</div>
 		  	<div class="page-footer">
 		  		<span>Website by</span>
-		  		<a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип"></a>
+		  		<a class="button-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип"></a>
 		  	</div>
 	  	</footer>	
 	  </div>

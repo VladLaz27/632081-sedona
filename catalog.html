@@ -27,58 +27,58 @@
 	  	<main class="content">
 	  		<section class="filters">
 		  		<form class="form-filters" method="post" action="https://echo.htmlacademy.ru">
-		  			<div class="form-columns left">
-				  		<b>Инфраструктура:</b>
-				  		<ul class="filter-checkboxes">
-				  			<li>
-				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
-			    				<label for="pool">Бассейн</label>
-				  			</li>
-				  			<li>
-				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
-				  				<label for="parking">Парковка</label>
-				  			</li>
-				  			<li>
-				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
-				  				<label for="wi-fi">wi-fi</label>
-				  			</li>
-				  		</ul>
-				  		<b>Тип жилья:</b>
-				  		<ul>
-				  			<li>
-				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
-			    				<label for="hotel">Гостиница</label>
-				  			</li>
-				  			<li>
-				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
-				  				<label for="motel">Мотель</label>
-				  			</li>
-				  			<li>
-				  				<input class="filter-checkbox visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
-				  				<label for="apartment">Апартаменты</label>
-				  			</li>
-				  		</ul>
+		  			<div class="left">
+		  				<fieldset class="form-checkbox">
+					  		<legend class="form-legend">Инфраструктура:</legend>
+					  		<ul class="filter-checkboxes">
+					  			<li>
+					  				<input class="filter-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked>
+				    				<label for="pool">Бассейн</label>
+					  			</li>
+					  			<li>
+					  				<input class="filter-checkbox visually-hidden" type="checkbox" name="parking" id="parking">
+					  				<label for="parking">Парковка</label>
+					  			</li>
+					  			<li>
+					  				<input class="filter-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+					  				<label for="wi-fi">wi-fi</label>
+					  			</li>
+					  		</ul>
+				  		</fieldset>
+					  	<fieldset class="form-checkbox">
+					  		<legend class="form-legend">Тип жилья:</legend>
+					  		<ul class="filter-checkboxes">
+					  			<li>
+					  				<input class="filter-checkbox visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+				    				<label class="form-label" for="hotel">Гостиница</label>
+					  			</li>
+					  			<li>
+					  				<input class="filter-checkbox visually-hidden" type="checkbox" name="motel" id="motel" checked>
+					  				<label for="motel">Мотель</label>
+					  			</li>
+					  			<li>
+					  				<input class="filter-checkbox visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
+					  				<label for="apartment">Апартаменты</label>
+					  			</li>
+					  		</ul>
+					  	</fieldset>	
 				  	</div> 
 				  	<div class="form-columns right">
-				  		<b>Стоимость усдуг в сутки(р):</b>
-				  		<div class="filter">
-							<div class="filter-range-wrapper">
-								<div class="filter-range">
-									<div class="filter-range-scale">
-									    <div class="filter-range-bar"></div>
-									</div>
-									  <button class="filter-range-handle min"></button>
-									  <button class="filter-range-handle max" style="left: 75%;"></button>
-								</div>
-							</div>
-								<div class="filter-interval">
-									<label>От <input type="text" name="min-interval" value="0"></label>
-									<label>До <input type="text" name="max-interval" value="15000"></label>
-								</div>
-							</div>
-							<button class="button-show" type="submit" value="Показать">Показать</button>
-						</div>
-					</form>			
+				  		<p>Стоимость улуг в сутки (р)</p>
+				  		<p class="price-control">
+				  			<label class="min-price">От<input type="text" name="min-price" value="0"></label>
+				  			<label class="max-price">До<input type="text" name="min-price" value="3000"></label>
+				  		</p>
+				  		<div class="range-control">
+				  			<div class="scale">
+				  				<div class="bar"></div>
+				  			</div>
+				  			<div class="range-toggle min"></div>
+				  			<div class="range-toggle max"></div>
+				  		</div>
+				  		<button class="btn-transparent" type="submit">Показать</button>
+					</div>
+				</form>			
 	  		</section>
 	  		<div class="search-header">
 	  			<div class="results">	
@@ -87,14 +87,18 @@
 			  	<div class="sorting">
 			  		<p>Сортировка:</p>
 			  		<ul class="sorting-list">
-			  			<li><a href="#">По цене</a></li>
-			  			<li><a href="#">По типу</a></li>
-			  			<li><a href="#">По рейтингу</a></li>
+			  			<li><a class="active" href="#">По цене</a></li>
+			  			<li><a class="not-active" href="#">По типу</a></li>
+			  			<li><a class="not-active" href="#">По рейтингу</a></li>
 			  		</ul>
 			  	</div>	
 		  		<ul class="search-navigation">
-		  			<li><a class="up" href="#">Стрелка вверх</a></li>
-		  			<li><a class="down" href="#">Стрелка вниз</a></li>
+		  			<li>
+		  				<a class="up" href="#" name="Стрелка вверх"><img src="img/icon-up-dir.svg" width="" height=""></a>
+		  			</li>
+		  			<li>
+		  				<a class="down" href="#" name="Стрелка вниз"><img src="img/icon-down-dir.svg" width="" height=""></a>
+		  			</li>
 		  		</ul>
 		  	</div>		
 	  			<ul class="catalog">
@@ -112,17 +116,13 @@
 			  						<a href="#" class="hotel_button button button--blue">Подробние</a>
 			  					</div>
 			  					<div class="hotels-booking">
-			  						<p class="hotel-text">От 4000Р</p>
+			  						<p class="hotel-text">От 4000 Р</p>
 			  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
 			  					</div>
 			  				</div>	
 			  			</div>		
 	  					<div class="rating">
-	  						<div class="rating-star">
-	  							<span>Звездочка</span>
-	  							<span>Звездочка</span>
-	  							<span>Звездочка</span>
-	  							<span>Звездочка</span>
+	  						<div class="rating-star hotel-stars">
 	  						</div>
 	  						<div class="rating-text">Рейтинг: <span class="rating-count"> 8.5</span>
 	  						</div>
@@ -142,16 +142,13 @@
 			  						<a href="#" class="hotel_button button button--blue">Подробние</a>
 			  					</div>
 			  					<div class="hotels-booking">
-			  						<p class="hotel-text">От 3000Р</p>
+			  						<p class="hotel-text">От 3000 Р</p>
 			  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
 			  					</div>
 			  				</div>		
 		  				</div>	
 	  					<div class="rating">
-	  						<div class="rating-star">
-	  							<span>Звездочка</span>
-	  							<span>Звездочка</span>
-	  							<span>Звездочка</span>
+	  						<div class="rating-star motel-stars">
 	  						</div>
 	  						<div class="rating-text">Рейтинг: <span class="rating-count"> 8.9</span>
 	  						</div>
@@ -171,15 +168,14 @@
 			  						<a href="#" class="hotel_button button button--blue">Подробние</a>
 			  					</div>
 			  					<div class="hotels-booking">
-			  						<p class="hotel-text">От 2000Р</p>
+			  						<p class="hotel-text">От 2000 Р</p>
 			  						<a href="#" class="hotel_button button button--brown">Забронировать</a>
 			  					</div>
 			  				</div>
 			  			</div>		
 	  					<div class="rating">
-	  						<div class="rating-star">
-	  							<span>Звездочка</span>
-	  							<span>Звездочка</span>
+	  						<div class="rating-star apartment-stars">
+	  							
 	  						</div>
 	  						<div class="rating-text">Рейтинг:<span class="rating-count">9.2</span>
 	  						</div>
@@ -189,7 +185,7 @@
 	  		</div>
 	  	</main>
 	  		  	<!--Подвал-->
-	  	<footer class="main-footer">
+	  	<footer class="main-footer catalog-footer">
 		  	<div class="page-footer">
 		  		<b>#visitsedona</b>
 		  	</div>		

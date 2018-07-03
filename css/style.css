@@ -231,6 +231,8 @@ a {
 	content: "";
 
 	position: absolute;
+	top: 50px;
+	right: 42%;
 
 	width: 75px;
 	height: 72px;
@@ -302,15 +304,15 @@ a {
 
 .search-hotels {
 	position: relative;
-	width: 576px;
+	z-index: 20;
+	width: 568px;
 	margin: 0 auto;
-	padding-top: 52px;
+	padding-top: 30px;
 	text-align: center;
 }
 
 .search-hotels b {
-	display: block;
-    margin-bottom: 23px;
+    margin-bottom: 32px;
     font-size: 30px;
     color: #000;
     line-height: 36px;
@@ -318,29 +320,54 @@ a {
 
 .search-hotels p {
 	line-height: 24px;
+	padding: 0 65px;
 }
 
 .button-search {
-	display: block;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+}
+
+.search-hotel .button-search {
+  position: relative;
+  z-index: 2;
+  margin-top: 32px;
+  padding: 30px 0;
+  width: 100%;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+
+.button-serch:focus {
+    outline: 3px solid #503e33;
+    outline-offset: -3px;
+}
+
+.button-serch:hover {
+    background-color: #604e43;
+}
+
+.search-form {
+	position: absolute;
+	z-index: 1;
+	transform-origin: top;
 	width: 100%;
-	min-height: 86px;
-	border: 0;
-	background-color: #766357;
-	font-size: 21px;
-	font-weight: bold;
-	text-transform: inherit;
-	color: white;
-	margin-top: 47px;
+	padding: 55px 55px;
+	box-sizing: border-box;
+	text-align: left;
+	background-color: #ffffff;
+	box-shadow: 0 7px 15px 0px rgba(0, 1, 1, 0.15);
 }
 
-.button-search:hover{
-	background-color: #604e43;
-}
 
-.button-search:active {
-	background-color: #503e33;
-	color: #94b9d2;
-}
 
 .button-hotels {
 	text-align: center;
@@ -395,10 +422,17 @@ a {
 
 .main-footer {
 	position: absolute;
-	width: 1200px;
 	display: flex;
 	line-height: 26px;
-	padding: 36px 0;
+    padding: 36px 0;
+    line-height: 26px;
+}
+
+.catalog-footer {
+	display: flex;
+	line-height: 26px;
+    padding: 36px 0;
+    line-height: 26px;
 }
 
 .page-footer {
@@ -444,7 +478,7 @@ a {
 	background: #81b3d2 url("../img/youtube.svg") no-repeat 50% 50%;
 }
 
-.button {
+.button-logo {
 	display: block;
 	width: 115px;
 	height: 41px;
@@ -454,47 +488,202 @@ a {
 
 
 
-
-
-
-
-
-
-
-
 .form-filters {
 	display: flex;
 	padding: 27px 72px 6px;
 	color: #fff;
 	background-image: url("../img/bg-catalog.jpg");
-	background-position: 50% 35%;
-	min-height: 217px;
+	background-position: 50% 50%;
 }
 
-.form-columns ul {
+.form-checkbox {
+	border: 0;
+	padding: 0;
 	margin: 0;
-	padding-left: 0;
-	list-style: none;
-
+	flex-grow: 1;
 }
 
-.filter-checkboxes {
-	margin: 0 auto;
-	padding: 
+.form-legend {
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
 }
-
-
 
 .left {
-	width: 576px;
+	width: 510px;
 	display: flex;
 }
 
 .right {
-	display: flex;
-	width: 400px;
+	width: 320px;
+	margin-left: auto;
 }
 
+.filter-checkboxes {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.filter-checkboxes li {
+	margin: 25px 0;
+}
+
+.filter-checkbox + label {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.filter-checkbox + label::before {
+	content: "";
+
+	position: absolute;
+	left: 0;
+  	top: 50%;
+
+  	width: 23px;
+  	height: 23px;
+  	transform: translateY(-50%);
+
+	background-image: url("../img/checkbox-off.svg");
+	background-repeat: no-repeat;
+}
+
+.filter-checkbox:checked + label::before {
+	width: 27px;
+	background-image: url("../img/checkbox-on.svg");
+}
+
+.form-columns {
+	color: #ffffff;
+  	text-transform: uppercase;
+}
+
+.right p:first-child {
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 9px;
+	line-height: 21px;
+}
+
+.price-control {
+	position: relative;
+
+	height: 36px;
+	margin-bottom: 20px;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	font-size: 0;
+}
+
+.price-control::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 28px;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+
+.price-control label {
+	display: inline-block;
+	vertical-align: top;
+
+	font-size: 14px;
+	line-height: 38px;
+	cursor: pointer;
+}
+
+.price-control .min-price,
+.price-control .max-price {
+	width: 90px;
+  	padding-left: 65px;
+}
+
+.price-control input {
+  	width: 50px;
+  	margin: 0;
+
+  	color: inherit;
+  	font: inherit;
+
+  	background: none;
+  	border: none;
+}
+
+.range-control {
+	position: relative;
+
+	margin-bottom: 32px;
+}
+
+
+.range-control .scale {
+	height: 2px;
+
+  	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-control .bar {
+	width: 80%;
+  	height: 2px;
+
+  	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+
+	width: 4px;
+	height: 4px;
+
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+
+}
+
+.min {
+	left: 0;
+}
+
+.max {
+	left: 80%;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
 
 .search-header {
 	display: flex;
@@ -519,58 +708,110 @@ a {
 .sorting {
 	display: flex;
 	flex-wrap: wrap;
+	flex-grow: 1;
 	font-size: 12px;
 	line-height: 18px;
 	align-items: center;
+	padding-left: 30px;
+	padding-right: 10px;
 }
 
 .sorting p {
 	width: 105px;
 }
 
-.sorting-list {
-	padding-left: 0; 
+.sorting-list { 
 	display: flex;
-	width: 250px;
+	flex-wrap: wrap;
+
 	list-style: none;
+	padding-left: 10px;
+	margin: 0;
 }
 
 .sorting-list li {
-	padding-right: 33px;
+	padding-right: 30px;
 }
 
-.sorting-list a {
-	color: #cacaca;
+.active {
+	color: #81b3d2;
+	border: none;
+}
+
+.not-active {
+	color: rgba(0,0,0,.3);
+    border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-list a:active {
 	color: #95bed8;
 }
 
-.sorting-list a:focus {
-
+.sorting-list a:hover {
+	color: #81b3d2;
 }
 
 .search-navigation {
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	align-items: center;
+	width: 110px;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+
+.search-navigation .up {
+	width: 6px;
+	height: 6px;
+	cursor: pointer;
+	padding-right: 20px;
+}
+
+.search-navigation .down {
+	width: 6px;
+	height: 6px;
+	cursor: pointer;
+}
+
+.catalog {
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog-item {
 	list-style: none;
 	display: flex;
-}
+	justify-content: space-between;
+
+	align-items: center;
+	padding: 25px 72px 29px;
+	border-bottom: 1px solid #e5e5e5;
+	
+}	
 
 .catalog-image {
+	display: block;
 	width:135px;
+	height: 90px;
 	margin: 0;
 	padding: 0;
 }
 
 .catalog-item_booking {
+	flex-grow: 1;
 	padding-left: 31px;
     padding-right: 31px;
+}
+
+.catalog-item_booking h2 {
+	margin-top: 0;
+	margin-bottom: 8px;
+    font-size: 21px;
+    line-height: 26px;
 }
 
 .catalog-item_booking h2>a {
@@ -589,27 +830,29 @@ a {
 
 .button-flex {
 	display: flex;
-	width: 265px;
 }
 
-.rating {
-	flex-direction: column;
-	align-items: flex-end;
-}
-
-.rating-star {
-	max-width: 110px;
-}
-
-
-.button--blue {
-	background-color: #81b3d2;
+.hotel-info {
+	margin-right: 5px;
 	width: 110px;
-	height: 27px;
-	color: white;
+}
+
+.hotel-text {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.hotel_button {
 	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: bold;
+	padding: 5px 13px;
+}
+
+.button--blue {
+	background-color: #81b3d2;
+	color: white;
 }	
 
 .button--blue:hover {
@@ -623,8 +866,6 @@ a {
 
 .button--brown {
 	background-color: #766357;
-	width: 142px;
-	height: 27px;
 	color: white;
 	text-align: center;
 	font-size: 14px;
@@ -640,7 +881,41 @@ a {
 	color: #7e746e;
 }
 
-/*
+.rating {
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.rating-star {
+	max-width: 110px;
+	height: 17px;
+	background: url("../img/star.svg") space; 
+}
+
+.hotel-stars {
+	position: relative;
+	left: 20%;
+	width: 80px;
+}
+
+.motel-stars {
+	position: relative;
+	left: 35%;
+	width: 65px;
+}
+
+.apartment-stars {
+	position: relative;
+	left: 50%;
+	width: 40px;
+}
+
+.rating-text {
+	background-color: #f2f2f2;
+	margin-top: 47px;
+	padding: 7px 15px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type='checkbox'].visually-hidden,
 input[type='radio'].visually-hidden {
