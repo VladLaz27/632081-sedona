@@ -651,7 +651,6 @@ a {
 	color: #766357;
 }
 
-
 .map {
     position: relative;
     height: 593px;;
@@ -684,8 +683,9 @@ a {
     padding: 36px 0;
     width: 1200px;
     background-color: #fdfdfd;
-    opacity: 0.8;
+    background-color: rgba(254,254,254,0.8);
     z-index: 20;
+    bottom: 0;
 }
 
 
