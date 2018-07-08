@@ -3,7 +3,7 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
-	color: black;
+	color: #333333;
 	text-transform: uppercase;
 }
 
@@ -298,7 +298,6 @@ a {
 	margin-top: 21px;
     margin-bottom: 23px;
     font-size: 30px;
-    color: #000;
     line-height: 36px;
 }
 
@@ -394,6 +393,7 @@ a {
 .search-form-row input:focus {
 	background-color: #ffffff;
 	outline-color: #e5e5e5;
+	outline-offset: -2px;
 }
 
 .wrapper-date input {
@@ -829,7 +829,7 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 14px;
-	line-height: 28px;
+	line-height: 21px;
 	cursor: pointer;
 }
 
