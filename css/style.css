@@ -33,8 +33,11 @@ a {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: auto;
   width: 1200px;
   min-height: 56px;
@@ -89,7 +92,8 @@ a {
   z-index: 5;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
 }
 
@@ -99,7 +103,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% -84px;
   min-height: 432px;
-  padding-top: 76px;
+  padding-top: 75px;
   width: 1200px;
   margin-bottom: 60px;
   position: relative;
@@ -136,14 +140,24 @@ a {
 }
 
 .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .feature-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .description-panorama {
@@ -448,8 +462,8 @@ a {
 
 .calendar-button {
   position: absolute;
-  top: 7px;
-  right: 8px;
+  top: 9px;
+  right: 4px;
   background-color: #f2f2f2;
   outline-color: #e5e5e5;
   opacity: 0.3;
@@ -756,7 +770,7 @@ a {
 }
 
 .right {
-  width: 320px;
+  width: 317px;
   margin-left: auto;
 }
 
@@ -839,7 +853,14 @@ a {
 .price-control .min-price,
 .price-control .max-price {
   width: 90px;
+}
+
+.price-control .min-price {
   padding-left: 65px;
+}
+
+.price-control .max-price {
+  padding-left: 57px;
 }
 
 .price-control input {
@@ -894,7 +915,8 @@ a {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  width: 137px;
+  margin: 0 0 0 85px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
