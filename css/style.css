@@ -95,6 +95,7 @@ a {
 
 .banner-bg {
   background: url("../img/bg.jpg");
+  background-color: #e1ebf4;
   background-repeat: no-repeat;
   background-position: 50% -84px;
   min-height: 432px;
@@ -732,6 +733,7 @@ a {
   padding: 27px 72px 6px;
   color: #fff;
   background-image: url("../img/bg-catalog.jpg");
+  background-color: #80a1c2;
   background-position: 50% 50%;
 }
 
@@ -1035,6 +1037,7 @@ a {
   padding-left: 31px;
   padding-right: 31px;
   max-height: 95px;
+  width: 700px;
 }
 
 .catalog-item_booking h2 {
