@@ -410,6 +410,7 @@ a {
   background-color: #ffffff;
   outline-color: #e5e5e5;
   outline-offset: -2px;
+  outline: 2px solid #e5e5e5;
 }
 
 .wrapper-date input {
@@ -683,7 +684,7 @@ a {
   background-color: white;
   display: flex;
   line-height: 26px;
-  padding: 36px 0;
+  padding: 34px 0;
   width: 1200px;
 }
 
@@ -978,7 +979,7 @@ a {
 }
 
 .sorting-list li {
-  padding-right: 30px;
+  padding-right: 32px;
 }
 
 .active {
@@ -1058,13 +1059,12 @@ a {
   flex-grow: 1;
   padding-left: 31px;
   padding-right: 31px;
-  max-height: 95px;
   width: 700px;
 }
 
 .catalog-item_booking h2 {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   font-size: 21px;
   line-height: 26px;
 }
@@ -1133,6 +1133,7 @@ a {
 .button--brown {
   background-color: #766357;
   color: white;
+  padding: 3px 17px;
 }
 
 .button--brown:hover {
